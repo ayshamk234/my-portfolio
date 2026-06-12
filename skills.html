@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills & Tech Stack</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #05071d;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .skills-section {
+            padding: 80px 10%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 50px;
+        }
+
+        .title::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            display: block;
+            margin: 10px auto;
+            background: linear-gradient(90deg, #4f7cff, #8b5cf6);
+        }
+
+        .category {
+            margin-bottom: 80px;
+        }
+
+        .category h2 {
+            text-align: center;
+            color: #d1d5db;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 30px;
+        }
+
+        .skill {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            transition: .3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .skill i {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #cfd4e6;
+        }
+
+        .skill p {
+            font-size: 15px;
+        }
+
+        /* ⭐ BACK BUTTON (ADDED ONLY THIS) */
+        .back-btn {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .back-btn a {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: 0.3s;
+        }
+
+        .back-btn a:hover {
+            background: linear-gradient(135deg, #4f7cff, #8b5cf6);
+            transform: translateY(-3px);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="skills-section">
+
+        <h1 class="title">Skills & Tech Stack</h1>
+
+        <!-- Programming Languages -->
+        <div class="category">
+            <h2>Programming Languages</h2>
+
+            <div class="skills-grid">
+                <div class="skill"><i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill"><i class="fab fa-java"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill"><i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill"><i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill"><i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill"><i class="fas fa-database"></i>
+                    <p>SQL</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="category">
+            <h2>Frameworks & Libraries</h2>
+            <div class="skills-grid">
+                <div class="skill"><i class="fas fa-code"></i>
+                    <p>Django</p>
+                </div>
+                <div class="skill"><i class="fas fa-flask"></i>
+                    <p>Flask</p>
+                </div>
+                <div class="skill"><i class="fab fa-bootstrap"></i>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="category">
+            <h2>Tools & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill"><i class="fab fa-github"></i>
+                    <p>GitHub</p>
+                </div>
+                <div class="skill"><i class="fab fa-figma"></i>
+                    <p>Figma</p>
+                </div>
+                <div class="skill"><i class="fas fa-code"></i>
+                    <p>VS Code</p>
+                </div>
+                <div class="skill"><i class="fas fa-database"></i>
+                    <p>DBMS</p>
+                </div>
+                <div class="skill"><i class="fab fa-wordpress"></i>
+                    <p>WordPress</p>
+                </div>
+                <div class="skill"><i class="fas fa-network-wired"></i>
+                    <p>Networking</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="category">
+            <h2>Soft Skills</h2>
+            <div class="skills-grid">
+                <div class="skill"><i class="fas fa-users"></i>
+                    <p>Leadership</p>
+                </div>
+                <div class="skill"><i class="fas fa-clock"></i>
+                    <p>Time Management</p>
+                </div>
+                <div class="skill"><i class="fas fa-comments"></i>
+                    <p>Communication</p>
+                </div>
+                <div class="skill"><i class="fas fa-arrows-rotate"></i>
+                    <p>Adaptability</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ⭐ BACK BUTTON ADDED HERE (END OF CONTAINER) -->
+        <div class="back-btn">
+            <a href="index.html">⬅ Back to Home</a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

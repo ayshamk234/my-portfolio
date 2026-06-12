@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+
+    <style>
+        /* BODY FIX (SCROLL ENABLED) */
+        body {
+            background: #05071d;
+            color: white;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            padding: 40px 0;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Background Glow */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: #4f7cff;
+            filter: blur(200px);
+            opacity: .2;
+            top: -100px;
+            left: -100px;
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: #8b5cf6;
+            filter: blur(200px);
+            opacity: .2;
+            bottom: -100px;
+            right: -100px;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            max-width: 850px;
+            z-index: 2;
+        }
+
+        /* Card */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 35px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        /* Text */
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #00e6e6;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: #00ffcc;
+            font-weight: bold;
+        }
+
+        /* ⭐ BACK BUTTON STYLE */
+        .back-btn {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .back-btn a {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: 0.3s;
+        }
+
+        .back-btn a:hover {
+            background: linear-gradient(135deg, #4f7cff, #8b5cf6);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>About Me</h1>
+
+            <p>
+                I am <span class="highlight">Aysha Mk</span>, a Computer Science postgraduate student
+                with a strong interest in cybersecurity, software development, and emerging technologies.
+            </p>
+
+            <p>
+                I am passionate about building practical and secure applications that solve real-world problems.
+                I enjoy working on projects like password security tools and phishing detection systems.
+            </p>
+
+            <p>
+                My focus is on improving my skills in programming, web development, and cybersecurity concepts
+                while continuously exploring ethical hacking and AI in security.
+            </p>
+
+            <p>
+                My goal is to become a <span class="highlight">Cybersecurity Engineer / Security Analyst</span>
+                and contribute to building safer digital systems.
+            </p>
+
+        </div>
+
+        <!-- ⭐ BACK BUTTON (ADDED ONLY) -->
+        <div class="back-btn">
+            <a href="index.html">⬅ Back to Home</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

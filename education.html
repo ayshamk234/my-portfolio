@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Aysha MK</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ⭐ ONLY CHANGE: SCROLL FIX */
+        body {
+            min-height: 100vh;
+
+            overflow-x: hidden;
+            overflow-y: auto;
+            /* ✅ enables scroll */
+
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            /* important for scroll */
+            background: #05071d;
+        }
+
+        /* 🌌 MOVING TECH BACKGROUND */
+        .tech-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .tech {
+            position: absolute;
+            font-size: 26px;
+            opacity: 0.35;
+            filter: drop-shadow(0 0 8px #4f7cff);
+            animation: moveAround linear infinite;
+        }
+
+        @keyframes moveAround {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(60px, -80px) rotate(10deg);
+            }
+
+            50% {
+                transform: translate(-50px, 60px) rotate(-10deg);
+            }
+
+            75% {
+                transform: translate(80px, 40px) rotate(15deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(79, 124, 255, 0.2), transparent 60%);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 850px;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        h1 span {
+            color: #4f7cff;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 20px;
+            border-radius: 14px;
+            border-left: 4px solid #4f7cff;
+            text-align: left;
+            backdrop-filter: blur(10px);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateX(10px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .year {
+            color: #8b5cf6;
+            font-weight: bold;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+
+        .desc {
+            color: #cbd5e1;
+            margin-top: 5px;
+            font-size: 0.95rem;
+        }
+
+        /* ⭐ BACK BUTTON */
+        .back-btn {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .back-btn a {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: 0.3s;
+        }
+
+        .back-btn a:hover {
+            background: linear-gradient(135deg, #4f7cff, #8b5cf6);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tech-bg" id="bg"></div>
+
+    <div class="container">
+
+        <h1>My <span>Education</span></h1>
+
+        <div class="timeline">
+
+            <div class="card">
+                <div class="year">Pursuing</div>
+                <div class="title">MSc Computer Science</div>
+                <div class="desc">St. Thomas College (Autonomous), Thrissur</div>
+            </div>
+
+            <div class="card">
+                <div class="year">2022 - 2025</div>
+                <div class="title">BSc Computer Science</div>
+                <div class="desc">St. Thomas College (Autonomous), Thrissur</div>
+            </div>
+
+            <div class="card">
+                <div class="year">2021</div>
+                <div class="title">Plus Two</div>
+                <div class="desc">Govt. School of Agatti</div>
+            </div>
+
+            <div class="card">
+                <div class="year">2019</div>
+                <div class="title">Matriculation (CBSE)</div>
+                <div class="desc">Govt. School of Agatti</div>
+            </div>
+
+        </div>
+
+        <div class="back-btn">
+            <a href="index.html">⬅ Back to Home</a>
+        </div>
+
+    </div>
+
+    <script>
+        const bg = document.getElementById("bg");
+
+        const techIcons = [
+            "🤖", "💻", "⌨️", "🖥️", "🧠", "⚙️", "🔌", "🧬", "📟", "📡", "🔗"
+        ];
+
+        for (let i = 0; i < 40; i++) {
+            let span = document.createElement("span");
+            span.classList.add("tech");
+
+            span.innerText = techIcons[Math.floor(Math.random() * techIcons.length)];
+
+            span.style.left = Math.random() * 100 + "vw";
+            span.style.top = Math.random() * 100 + "vh";
+
+            span.style.animationDuration = (Math.random() * 6 + 4) + "s";
+            span.style.fontSize = (Math.random() * 18 + 18) + "px";
+
+            bg.appendChild(span);
+        }
+    </script>
+
+</body>
+
+</html>

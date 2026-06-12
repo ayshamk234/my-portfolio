@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Poppins, Arial, sans-serif;
+            background: #04051f;
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .particles {
+            position: fixed;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(80, 120, 255, .2), transparent 20%),
+                radial-gradient(circle at 80% 70%, rgba(138, 43, 226, .2), transparent 20%);
+        }
+
+        .hero,
+        .page {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: auto;
+            padding: 80px 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px
+        }
+
+        h3 {
+            margin-bottom: 20px;
+            color: #cbd5e1
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 20px auto
+        }
+
+        .card {
+            background: rgba(255, 255, 255, .08);
+            backdrop-filter: blur(8px);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, .1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .tools {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        .tool-badge {
+            display: inline-block;
+            margin: 5px 5px 0 0;
+            padding: 5px 10px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            font-size: 0.85rem;
+        }
+
+        /* ⭐ BACK BUTTON STYLE */
+        .back-btn {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-btn a {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: 0.3s;
+        }
+
+        .back-btn a:hover {
+            background: linear-gradient(135deg, #4f7cff, #8b5cf6);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="particles"></div>
+
+    <section class="page">
+
+        <h1><span>Projects</span></h1>
+
+        <!-- PROJECT 1 -->
+        <div class="card">
+            <div class="icon">🔐</div>
+            <h2>Password Strength Analyzer</h2>
+            <p>Evaluates password security and suggests improvements.</p>
+
+            <div class="tools">
+                <div class="tool-badge">🖥️ Frontend: HTML, CSS</div>
+                <div class="tool-badge">⚙️ Backend: Python</div>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="card">
+            <div class="icon">🛡️</div>
+            <h2>Simple Phishing URL Detector</h2>
+            <p>Identifies suspicious URLs using phishing indicators.</p>
+
+            <div class="tools">
+                <div class="tool-badge">🖥️ Frontend: HTML, CSS, JavaScript</div>
+                <div class="tool-badge">⚙️ Backend: Python (Flask)</div>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="card">
+            <div class="icon">📚</div>
+            <h2>Smart Learning Platform</h2>
+            <p>Textbook management system with speech and text conversion.</p>
+
+            <div class="tools">
+                <div class="tool-badge">🖥️ Frontend: HTML, CSS, JavaScript</div>
+                <div class="tool-badge">⚙️ Backend: Python / Flask / mysql</div>
+            </div>
+        </div>
+
+        <!-- ⭐ EXPERIENCE SECTION (ADDED) -->
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h2>Experience</h2>
+
+            <p>
+                <b>ST. THOMAS COLLEGE (AUTONOMOUS), THRISSUR</b><br><br>
+
+                Successfully completed an internship in <b>"Python Full Stack Development"</b> organized by the
+                Department of Data Science,
+                St. Thomas College (Autonomous), Thrissur in association with industrial partners
+                <b>Hireflex Global, Star Innovations, Thrissur</b> and
+                <b>Metta InHouse Agency (OPC) Pvt. Ltd.</b>
+            </p>
+        </div>
+
+        <!-- ⭐ BACK BUTTON -->
+        <div class="back-btn">
+            <a href="index.html">⬅ Back to Home</a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
