@@ -80,34 +80,43 @@
         .hero span {
             color: #4f7cff;
         }
+.typing-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-        .typing-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
+.typing-text {
+    color: #cbd5e1;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #4f7cff;
 
-        .typing-text {
-            color: #cbd5e1;
-            font-size: 1.2rem;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid #4f7cff;
-            width: 0;
-            animation: typing 6s steps(60, end) infinite, blink .8s infinite;
-        }
+    /* Start hidden */
+    width: 0;
 
-        @keyframes typing {
-            0% { width: 0; }
-            40% { width: 100%; }
-            60% { width: 100%; }
-            100% { width: 0; }
-        }
+    /* Type once and keep text visible */
+    animation: typing 6s steps(60, end) forwards,
+               blink .8s infinite;
+}
 
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
+@keyframes typing {
+    from {
+        width: 0;
+    }
 
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+        
         .hero p {
             color: #d1d5db;
             font-size: 1.05rem;
