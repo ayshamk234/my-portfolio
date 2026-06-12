@@ -3,7 +3,186 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aysha MK Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #05071d;
+            color: white;
+            min-height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* 🌈 Background glow */
+        body::before,
+        body::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            filter: blur(200px);
+            opacity: .25;
+            z-index: 0;
+        }
+
+        body::before {
+            background: #4f7cff;
+            top: -100px;
+            left: -100px;
+        }
+
+        body::after {
+            background: #8b5cf6;
+            bottom: -100px;
+            right: -100px;
+        }
+
+        /* 🌐 floating tech icons */
+        .tech {
+            position: absolute;
+            font-size: 26px;
+            opacity: 0.25;
+            animation: float 6s ease-in-out infinite;
+            filter: drop-shadow(0 0 8px #4f7cff);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-30px); }
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            z-index: 2;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        /* NAME */
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #4f7cff;
+        }
+
+        /* typing */
+        .typing-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .typing-text {
+            color: #cbd5e1;
+            font-size: 1.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #4f7cff;
+            width: 0;
+            animation: typing 6s steps(60, end) infinite, blink .8s infinite;
+        }
+
+        @keyframes typing {
+            0% { width: 0; }
+            40% { width: 100%; }
+            60% { width: 100%; }
+            100% { width: 0; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        /* description */
+        .hero p {
+            color: #d1d5db;
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+        }
+
+        /* buttons */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 12px 22px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #4f7cff, #8b5cf6);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🌐 Floating tech icons -->
+    <div class="tech" style="top:10%; left:10%;">🤖</div>
+    <div class="tech" style="top:20%; right:15%;">💻</div>
+    <div class="tech" style="bottom:15%; left:20%;">🧠</div>
+    <div class="tech" style="bottom:25%; right:10%;">⌨️</div>
+    <div class="tech" style="top:60%; left:5%;">🖥️</div>
+
+    <section class="hero">
+
+        <h1>Hello, I'm <span>Aysha MK</span></h1>
+
+        <div class="typing-container">
+            <div class="typing-text">
+                MSc Computer Science Student | BSc Computer Science graduate | Cybersecurity | AI Enthusiast
+            </div>
+        </div>
+
+        <p>
+            Passionate about Cybersecurity, Secure Coding, Web Development
+            and Intelligent AI Systems. Transforming ideas into real-world solutions.
+        </p>
+
+        <div class="buttons">
+            <a href="about.html" class="btn">About Me</a>
+            <a href="projects.html" class="btn">Projects</a>
+            <a href="skills.html" class="btn">Skills</a>
+            <a href="education.html" class="btn">Education</a>
+            <a href="contact.html" class="btn">Contact</a>
+        </div>
+
+    </section>
+
+</body>
+
+</html> initial-scale=1.0">
 
     <title>Aysha MK Portfolio</title>
 
