@@ -143,6 +143,54 @@
             background: linear-gradient(135deg, #4f7cff, #8b5cf6);
             transform: translateY(-3px);
         }
+        /* =========================
+   MOBILE RESPONSIVE FIXES
+   (ADD ONLY THIS CODE)
+========================= */
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 30px 15px;
+    }
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .typing-text {
+        font-size: 1rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .tech {
+        font-size: 20px;
+    }
+}
     </style>
 </head>
 
